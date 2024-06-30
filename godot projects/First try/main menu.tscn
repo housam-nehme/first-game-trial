@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://cfxdc0umehcvi"]
+
+[ext_resource type="Script" path="res://main menu.gd" id="1_esecv"]
+
+[node name="MainMenu" type="Node2D"]
+script = ExtResource("1_esecv")
+
+[node name="Title Label" type="Label" parent="."]
+offset_left = 193.0
+offset_top = 405.0
+offset_right = 692.0
+offset_bottom = 546.0
+theme_override_font_sizes/font_size = 25
+text = "Dungeon Platformer
+By: Housam Nehme
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Play game button" type="Button" parent="."]
+offset_left = 354.0
+offset_top = 551.0
+offset_right = 530.0
+offset_bottom = 605.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.894922, 0.894922, 0.894922, 1)
+theme_override_colors/icon_normal_color = Color(0, 2.11775e-06, 0.961455, 1)
+theme_override_colors/icon_hover_color = Color(0.28312, 0.415724, 0.865189, 1)
+theme_override_font_sizes/font_size = 25
+text = "Play Game
+"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(446, 529)
+zoom = Vector2(4, 4)
+
+[connection signal="pressed" from="Play game button" to="." method="_on_play_game_button_pressed"]

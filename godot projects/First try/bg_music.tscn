@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://cn6etxtibqph6"]
+
+[ext_resource type="AudioStream" uid="uid://dq0ooioqo2l44" path="res://ruins-168316.mp3" id="1_7cicx"]
+
+[node name="bg music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_7cicx")
+autoplay = true
